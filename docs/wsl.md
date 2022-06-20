@@ -18,6 +18,12 @@ A step-by-step guide on how to set up a WSL development environment.
    > wsl --set-default Ubuntu
    ```
 
+1. Set Ubuntu to run in WSL2 for improved performance:
+
+   ```
+   > wsl --set-version Ubuntu 2
+   ```
+
 1. Open WSL:
 
     ```
