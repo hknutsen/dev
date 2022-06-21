@@ -1,37 +1,23 @@
-# Set up WSL development environment
+# WSL
 
-A step-by-step guide on how to set up a WSL development environment.
+## Install
 
-## Install and configure WSL
+```
+> wsl --install --distribution Ubuntu
+```
 
-1. Install WSL with the Ubuntu distribution by running this command in PowerShell or Command Prompt:
+> This command will enable the required components, download the latest Linux kernel, and install the Ubuntu distribution for you.
 
-    ```
-    > wsl --install --distribution Ubuntu
-    ```
+## Configure
 
-1. Restart your machine.
+### Set Ubuntu as the default distribution
 
-1. Set Ubuntu as your default distribution:
+```
+> wsl --set-default Ubuntu
+```
 
-   ```
-   > wsl --set-default Ubuntu
-   ```
+### Run Ubuntu in WSL 2
 
-1. Set Ubuntu to run in WSL2 for improved performance:
-
-   ```
-   > wsl --set-version Ubuntu 2
-   ```
-
-1. Open WSL:
-
-    ```
-    > wsl
-    ```
-
-1. Verify that you are running Ubuntu:
-
-   ```
-   $ lsb_release --all
-   ```
+```
+> wsl --set-version Ubuntu 2
+```
