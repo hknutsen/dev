@@ -2,11 +2,11 @@
 
 ## Install
 
-See [WSL](wsl.md).
+```
+$ sudo apt install git
+```
 
 ## Configure
-
-TODO
 
 ## Reset
 
