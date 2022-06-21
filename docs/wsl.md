@@ -21,3 +21,7 @@
 ```
 > wsl --set-version Ubuntu 2
 ```
+
+## References
+
+- https://docs.microsoft.com/en-us/windows/wsl/install
