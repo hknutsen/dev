@@ -4,13 +4,19 @@
 
 See [WSL](wsl.md).
 
-## Reset credentials store
+## Configure
+
+TODO
+
+## Reset
+
+### Reset credentials store
 
 ```
 $ rm ~/.git-credentials
 ```
 
-## Reset global configuration
+### Reset global configuration
 
 ```
 $ rm ~/.gitconfig
