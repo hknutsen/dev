@@ -59,6 +59,58 @@ $ git config --global pull.rebase false
 $ git config --global core.autocrlf input
 ```
 
+### Sign commits
+
+1. Install GnuPG:
+
+    ```
+    $ sudo apt install gnupg
+    ```
+
+1. Generate a new GPG key pair:
+
+    ```
+    $ gpg --quick-generate-key "John Doe <johndoe@example.com>" rsa4096 sign 3m
+    ```
+
+    At the prompt, enter a strong passphrase and store it somewhere secure.
+
+1. Get your GPG key ID:
+
+    ```
+    $ gpg --list-secret-keys --with-colons | grep '^sec:' | cut --delimiter ':' --fields 5 | tail --lines 1
+    ```
+
+1. Export your public GPG key:
+
+    ```
+    $ gpg --armor --export <GPG_KEY_ID>
+    ```
+
+    Copy your public GPG key, beginning with `-----BEGIN PGP PUBLIC KEY BLOCK-----` and ending with `-----END PGP PUBLIC KEY BLOCK-----`.
+
+1. Go to "https://github.com/settings/keys" and add your public PGP key.
+
+1. Use your GPG key to sign commits:
+
+    ```
+    $ git config --global user.signingkey <GPG_KEY_ID>
+    ```
+
+1. Sign commits by default:
+
+    ```
+    $ git config --global commit.gpgsign true
+    ```
+
+1. Set the value of environment variable `GPG_TTY` in your `.bashrc` file:
+
+    ```
+    $ printf '\nexport GPG_TTY=$(tty)\n' >> ~/.bashrc
+    ```
+
+    > It is important that this environment variable always reflects the output of the `tty` command.
+
 ## Reset
 
 ### Reset stored credentials
