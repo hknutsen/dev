@@ -59,7 +59,7 @@ A step-by-step guide on how to set up a WSL development environment.
     $ git config --global credential.helper store
     ```
 
-1. Go to "https://github.com/settings/tokens" and generate a new personal access token with an expiration of 90 days and the "repo" scope.
+1. Go to "https://github.com/settings/tokens" and generate a new personal access token with an expiration of 90 days and the "repo" and "workflow" scopes.
 
     Once you have a token, you can enter it instead of your password when performing Git operations over HTTPS.
 
