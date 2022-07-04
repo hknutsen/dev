@@ -47,7 +47,16 @@ $ git config --global credential.helper store
 $ git config --global init.defaultBranch main
 ```
 
-### Create merge commit on pull
+### Merge on pull
+
+When pulling, you must specify how to reconcile diverging branches:
+
+- Rebase the current branch on top of the upstream branch.
+- Merge the upstream branch into the current branch.
+
+Rebase is a potentially dangerous operation; do **not** use it unless you understand the implications.
+
+To merge by default, run the following command:
 
 ```
 $ git config --global pull.rebase false
