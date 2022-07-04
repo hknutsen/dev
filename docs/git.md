@@ -53,6 +53,14 @@ $ git config --global init.defaultBranch main
 $ git config --global pull.rebase false
 ```
 
+### Prune on fetch
+
+Before fetching, remove any remote-tracking references that no longer exist on the remote:
+
+```
+$ git config --global fetch.prune true
+```
+
 ### Convert CRLF line endings to LF on commit
 
 ```
