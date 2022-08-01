@@ -47,6 +47,14 @@ $ git config --global credential.helper store
 $ git config --global init.defaultBranch main
 ```
 
+### Auto setup remote on push
+
+Assume `--set-upstream` on default push when no upstream tracking exists for the current branch:
+
+```
+$ git config --global push.autoSetupRemote true
+```
+
 ### Rebase on pull
 
 Rebase the current branch on top of the upstream branch after fetching. If there is a remote-tracking branch corresponding to the upstream branch and the upstream branch was rebased since last fetched, the rebase uses that information to avoid rebasing non-local changes.
