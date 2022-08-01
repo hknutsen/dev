@@ -11,8 +11,8 @@ $ sudo apt install git
 ### Set name and email address
 
 ```
-$ git config --global user.name "John Doe"
-$ git config --global user.email johndoe@example.com
+$ git config --global user.name "Henrik Knutsen"
+$ git config --global user.email 46495473+hknutsen@users.noreply.github.com
 ```
 
 > To keep your email address private, use your GitHub-provided no-reply email address.
@@ -80,7 +80,7 @@ $ git config --global core.autocrlf input
 1. Generate a new GPG key pair:
 
     ```
-    $ gpg --quick-generate-key "John Doe <johndoe@example.com>" rsa4096 sign 3m
+    $ gpg --quick-generate-key "Henrik Knutsen <46495473+hknutsen@users.noreply.github.com>" rsa4096 sign 3m
     ```
 
     At the prompt, enter a strong passphrase and store it somewhere secure.
