@@ -22,6 +22,16 @@
 > wsl --set-version Ubuntu 2
 ```
 
+## Verify
+
+### Verify default distribution and version
+
+```
+> wsl --status
+Default Distribution: Ubuntu
+Default Version: 2
+```
+
 ## References
 
 - https://docs.microsoft.com/en-us/windows/wsl/install
