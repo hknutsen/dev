@@ -4,8 +4,8 @@ This document provides instructions on how to install and configure Windows Subs
 
 ## Install
 
-```
-> wsl --install --distribution Ubuntu
+```text
+wsl --install --distribution Ubuntu
 ```
 
 > This command will enable the required components, download the latest Linux kernel, and install the Ubuntu distribution for you.
@@ -14,21 +14,21 @@ This document provides instructions on how to install and configure Windows Subs
 
 ### Set Ubuntu as the default distribution
 
-```
-> wsl --set-default Ubuntu
+```text
+wsl --set-default Ubuntu
 ```
 
 ### Run Ubuntu in WSL 2
 
-```
-> wsl --set-version Ubuntu 2
+```text
+wsl --set-version Ubuntu 2
 ```
 
 ## Verify
 
 ### Verify default distribution and version
 
-```
+```text
 > wsl --status
 Default Distribution: Ubuntu
 Default Version: 2
