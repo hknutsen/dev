@@ -36,4 +36,5 @@ Default Version: 2
 
 ## References
 
-- https://docs.microsoft.com/en-us/windows/wsl/install
+- [Install Linux on Windows with WSL](https://docs.microsoft.com/en-us/windows/wsl/install)
+- [Basic commands for WSL](https://docs.microsoft.com/en-us/windows/wsl/basic-commands)
