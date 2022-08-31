@@ -1,4 +1,4 @@
-# Install and configure Git for Windows
+# Git
 
 This document provides instructions on how to install and configure Git for Windows and on Windows Subsystem for Linux (WSL).
 
