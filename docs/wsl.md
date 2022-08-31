@@ -1,5 +1,7 @@
 # WSL
 
+This document provides instructions on how to install and configure Windows Subsystem for Linux (WSL).
+
 ## Install
 
 ```
