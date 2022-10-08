@@ -1,0 +1,62 @@
+# Strings in Bash
+
+This document contains instructions on how to work with strings in Bash.
+
+## Loops
+
+### Loop over multi-line string
+
+```bash
+my_string='First line
+Second line
+Third line'
+
+while read -r line
+do
+  echo "$line"
+done <<< "$my_string"
+```
+
+### Loop over JSON array
+
+Consider a file `animals.json` containing the following JSON array:
+
+```json
+[
+  {
+    "name": "dog",
+    "sound": "woof"
+  },
+  {
+    "name": "cat",
+    "sound": "meow"
+  },
+  {
+    "name": "horse",
+    "sound": "neigh"
+  }
+  {
+    "name": "cow",
+    "sound": "moo"
+  },
+  {
+    "name": "sheep",
+    "sound": "baa"
+  }
+]
+```
+
+Loop over the JSON array using `jq`:
+
+```bash
+# Read the JSON array in compact format (one element per line)
+animals=$(jq -c '.[]' animals.json)
+
+# Read each line and write it to stdout
+while read -r animal
+do
+  name=$(jq -r '.name' <<< "$animal")
+  sound=$(jq -r '.sound' <<< "$animal")
+  echo "The $name says $sound"
+done <<< "$animals"
+```
