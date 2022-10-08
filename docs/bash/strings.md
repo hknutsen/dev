@@ -78,4 +78,5 @@ export NAME='Henrik'
 
 greeting=$(envsubst < greeting.txt)
 echo "$greeting"
+# => Hello, Henrik!
 ```
