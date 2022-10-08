@@ -60,3 +60,22 @@ do
   echo "The $name says $sound"
 done <<< "$animals"
 ```
+
+## Variable substitution
+
+### Substitue environment variables in a file
+
+Consider a file `greeting.txt` containing the following plaintext:
+
+```text
+Hello, $NAME!
+```
+
+Substitute the environment variable `NAME` using `envsubst`:
+
+```bash
+export NAME='Henrik'
+
+greeting=$(envsubst < greeting.txt)
+echo "$greeting"
+```
