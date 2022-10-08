@@ -24,24 +24,24 @@ Consider a file `animals.json` containing the following JSON array:
 ```json
 [
   {
-    "name" = "dog",
-    "sound" = "woof"
+    "name": "dog",
+    "sound": "woof"
   },
   {
-    "name" = "cat",
-    "sound" = "meow"
+    "name": "cat",
+    "sound": "meow"
   },
   {
-    "name" = "horse",
-    "sound" = "neigh"
+    "name": "horse",
+    "sound": "neigh"
   }
   {
-    "name" = "cow",
-    "sound" = "moo"
+    "name": "cow",
+    "sound": "moo"
   },
   {
-    "name" = "sheep",
-    "sound" = "baa"
+    "name": "sheep",
+    "sound": "baa"
   }
 ]
 ```
