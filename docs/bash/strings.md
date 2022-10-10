@@ -12,7 +12,7 @@ Second line
 Third line'
 
 IFS=$'\n'
-readarray -t my_array <<< "$my_string"
+read -ra my_array -d '' <<< "$my_string"
 
 echo "${my_string[0]}"
 # => First line
@@ -20,6 +20,8 @@ echo "${my_string[0]}"
 echo "${my_string[@]}"
 # => First line Second line Third line
 ```
+
+[SC2206](https://www.shellcheck.net/wiki/SC2206)
 
 ## Loops
 
