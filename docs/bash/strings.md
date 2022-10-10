@@ -2,6 +2,25 @@
 
 This document contains instructions on how to work with strings in Bash.
 
+## Conversions
+
+### Convert multi-line string to array
+
+```bash
+my_string='First line
+Second line
+Third line'
+
+IFS=$'\n'
+readarray -t my_array <<< "$my_string"
+
+echo "${my_string[0]}"
+# => First line
+
+echo "${my_string[@]}"
+# => First line Second line Third line
+```
+
 ## Loops
 
 ### Loop over multi-line string
