@@ -104,3 +104,11 @@ greeting=$(envsubst < greeting.txt)
 echo "$greeting"
 # => Hello, Henrik!
 ```
+
+## Web
+
+### Get resource from web server
+
+```console
+wget <url>
+```
