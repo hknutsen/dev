@@ -1,4 +1,4 @@
-# Strings in Bash
+# Bash
 
 This document contains instructions on how to work with Bash.
 
