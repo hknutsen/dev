@@ -83,7 +83,7 @@ done <<< "$animals"
 
 ### Extract tar file
 
-```console
+```bash
 tar -xf <tar_file>
 ```
 
