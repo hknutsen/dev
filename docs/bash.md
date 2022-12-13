@@ -79,7 +79,13 @@ do
 done <<< "$animals"
 ```
 
-## Variable substitution
+## Files
+
+### Extract tar file
+
+```console
+tar -xf <tar_file>
+```
 
 ### Substitue environment variables in a file
 
@@ -97,12 +103,4 @@ export NAME='Henrik'
 greeting=$(envsubst < greeting.txt)
 echo "$greeting"
 # => Hello, Henrik!
-```
-
-## Files
-
-### Extract tar file
-
-```console
-tar -xf <tar_file>
 ```
