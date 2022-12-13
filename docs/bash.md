@@ -1,6 +1,6 @@
 # Strings in Bash
 
-This document contains instructions on how to work with strings in Bash.
+This document contains instructions on how to work with Bash.
 
 ## Conversions
 
