@@ -109,6 +109,6 @@ echo "$greeting"
 
 ### Get resource from web server
 
-```console
+```bash
 wget <url>
 ```
