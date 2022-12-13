@@ -98,3 +98,11 @@ greeting=$(envsubst < greeting.txt)
 echo "$greeting"
 # => Hello, Henrik!
 ```
+
+## Files
+
+### Extract tar file
+
+```console
+tar -xf <tar_file>
+```
