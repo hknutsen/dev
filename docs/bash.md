@@ -81,12 +81,12 @@ done <<< "$animals"
 
 ## Files
 
-### Extract archive file
+### Extract files from archive
 
-Extract archive file `my_archive.tar`:
+Extract all files from `archive.tar`:
 
 ```bash
-tar -xf my_archive.tar
+tar -xf archive.tar
 ```
 
 ### Substitue environment variables in a file
