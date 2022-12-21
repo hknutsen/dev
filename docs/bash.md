@@ -2,6 +2,11 @@
 
 This document contains instructions on how to work with Bash.
 
+Useful resources:
+
+- [Bash Reference Manual](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html)
+- [ShellCheck](https://www.shellcheck.net/) - find bugs in your Bash script
+
 ## Conversions
 
 ### Convert multi-line string to array
