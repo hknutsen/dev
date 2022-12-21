@@ -114,3 +114,19 @@ echo "$greeting"
 ```bash
 wget <url>
 ```
+
+## Prompts
+
+### Yes/no prompt
+
+```bash
+read -r -p "Do something? (Y/n) " response
+
+case $response in
+  [yY][eE][sS]|[yY])
+    ;;
+  *)
+    exit 0
+    ;;
+esac
+```
