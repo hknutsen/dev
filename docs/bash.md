@@ -129,8 +129,10 @@ read -r -p "Do something? (Y/n) " response
 
 case $response in
   [yY][eE][sS]|[yY])
+    echo "Doing something..."
     ;;
   *)
+    echo "Doing nothing. Exiting."
     exit 0
     ;;
 esac
