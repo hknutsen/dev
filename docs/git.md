@@ -22,7 +22,7 @@ git config --global user.email johndoe@example.com
 Store credentials in cache for 28800 seconds (8 hours):
 
 ```bash
-git config --global credential.helper 'cache --timeout 28800'
+git config --global credential.helper 'cache --timeout=28800'
 ```
 
 ### Set default branch name
