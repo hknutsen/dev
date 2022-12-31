@@ -44,7 +44,7 @@ This document contains instructions on how to install and configure Git for Wind
 
 ## Common configurations
 
-> **Note** The following configurations must be set for both Git for Windows and on WSL.
+Run the following commands in both PowerShell and Bash:
 
 ```shell
 # Set name and email address
