@@ -2,8 +2,6 @@
 
 This document contains instructions on how to install and configure Git for Windows and on Windows Subsystem for Linux (WSL).
 
-## Prerequisites
-
 ## Install Git for Windows
 
 Run the following command in PowerShell:
