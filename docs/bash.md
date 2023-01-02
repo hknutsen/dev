@@ -137,3 +137,13 @@ case $response in
     ;;
 esac
 ```
+
+## Users
+
+### Update user password
+
+Update password for user `henrik`:
+
+```bash
+sudo passwd henrik
+```
