@@ -42,7 +42,7 @@ This document contains instructions on how to install and configure Git for Wind
    git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"
    ```
 
-## Configure Git
+## Set global options
 
 Run the following commands in both PowerShell and Bash:
 
