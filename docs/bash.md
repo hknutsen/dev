@@ -125,7 +125,7 @@ wget <url>
 ### Yes/no prompt
 
 ```bash
-read -r -p "Do something? (Y/n) " response
+read -r -p "Do something? (y/N) " response
 
 case $response in
   [yY][eE][sS]|[yY])
