@@ -8,8 +8,8 @@ This document contains instructions on how to install and configure Git for Wind
 
 1. Install Git for Windows:
 
-   ```shell
-   winget install -e --id Git. --source winget
+   ```powershell
+   winget install -e --id Git.Git --source winget
    ```
 
 1. Restart your PC to finish the installation.
@@ -20,7 +20,7 @@ This document contains instructions on how to install and configure Git for Wind
 
 1. Configure Git for Windows to use Git Credential Manager (GCM) as its credential helper:
 
-   ```shell
+   ```powershell
    git config --global credential.helper manager
    ```
 
@@ -32,13 +32,13 @@ This document contains instructions on how to install and configure Git for Wind
 
 1. Install Git on WSL:
 
-   ```shell
+   ```bash
    sudo apt install git
    ```
 
 1. Configure Git on WSL to use GCM as its credential helper:
 
-   ```shell
+   ```bash
    git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"
    ```
 
@@ -46,7 +46,7 @@ This document contains instructions on how to install and configure Git for Wind
 
 Run the following commands in both PowerShell and Bash:
 
-```shell
+```bash
 # Set name and email address
 git config --global user.name "Henrik Knutsen"
 git config --global user.email 46495473+hknutsen@users.noreply.github.com
