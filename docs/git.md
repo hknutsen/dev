@@ -8,7 +8,7 @@ This document contains instructions on how to install and configure Git for Wind
 
 1. Install Git for Windows:
 
-   ```powershell
+   ```cmd
    winget install -e --id Git.Git --source winget
    ```
 
@@ -20,7 +20,7 @@ This document contains instructions on how to install and configure Git for Wind
 
 1. Configure Git for Windows to use Git Credential Manager (GCM) as its credential helper:
 
-   ```powershell
+   ```cmd
    git config --global credential.helper manager
    ```
 
