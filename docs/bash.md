@@ -84,6 +84,32 @@ do
 done <<< "$animals"
 ```
 
+## JSON
+
+### Create JSON object
+
+Consider a file `foobar.json` containing the following JSON object:
+
+```json
+{
+  "foo": "bar"
+}
+```
+
+Create a new JSON object:
+
+```bash
+jq '{baz: .foo}' foobar.json
+```
+
+Output JSON:
+
+```json
+{
+  "baz": "bar"
+}
+```
+
 ## Files
 
 ### Extract files from archive
