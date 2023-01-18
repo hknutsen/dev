@@ -7,7 +7,7 @@ Useful resources:
 - [Bash Reference Manual](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html)
 - [ShellCheck](https://www.shellcheck.net/) - find bugs in your Bash script
 
-## Conversions
+## Multi-line strings
 
 ### Convert multi-line string to array
 
@@ -25,8 +25,6 @@ echo "${my_array[@]}"
 # => First line Second line Third line
 ```
 
-## Loops
-
 ### Loop over multi-line string
 
 ```bash
@@ -38,6 +36,32 @@ while read -r line
 do
   echo "$line"
 done <<< "$my_string"
+```
+
+## JSON
+
+### Create JSON object
+
+Consider a file `foobar.json` containing the following JSON object:
+
+```json
+{
+  "foo": "bar"
+}
+```
+
+Create a new JSON object:
+
+```bash
+jq '{baz: .foo}' foobar.json
+```
+
+Output JSON:
+
+```json
+{
+  "baz": "bar"
+}
 ```
 
 ### Loop over JSON array
@@ -84,32 +108,6 @@ do
 done <<< "$animals"
 ```
 
-## JSON
-
-### Create JSON object
-
-Consider a file `foobar.json` containing the following JSON object:
-
-```json
-{
-  "foo": "bar"
-}
-```
-
-Create a new JSON object:
-
-```bash
-jq '{baz: .foo}' foobar.json
-```
-
-Output JSON:
-
-```json
-{
-  "baz": "bar"
-}
-```
-
 ## Files
 
 ### Extract files from archive
@@ -146,7 +144,7 @@ echo "$greeting"
 wget <url>
 ```
 
-## Prompts
+## Inputs
 
 ### Yes/no prompt
 
