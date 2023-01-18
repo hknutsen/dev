@@ -4,7 +4,7 @@ This document contains instructions on how to install and configure Windows Subs
 
 ## Configure
 
-### Use PowerShell Core from Windows
+### Call PowerShell Core from Windows
 
 Add the following line to your `~/.bash_aliases` file:
 
