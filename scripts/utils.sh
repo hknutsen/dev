@@ -14,7 +14,7 @@ err() {
 #   1 if command does not exist.
 #######################################
 function check_cmd() {
-  if [[ -z "$(command -v "$1")" ]]; then
+  if [[ -z $(command -v "$1") ]]; then
     err "Command '$1' does not exist."
     exit 1
   fi
