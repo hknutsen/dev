@@ -2,6 +2,16 @@
 
 This document contains instructions on how to install and configure Windows Subsystem for Linux (WSL).
 
+## Install
+
+1. Open PowerShell.
+
+1. Install WSL:
+
+    ```cmd
+    wsl --install
+    ```
+
 ## Configure
 
 ### Call PowerShell Core from Windows
