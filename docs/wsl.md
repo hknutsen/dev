@@ -11,3 +11,5 @@ This document contains instructions on how to install Windows Subsystem for Linu
     ```cmd
     wsl --install
     ```
+
+1. Restart your PC to complete the installation.
