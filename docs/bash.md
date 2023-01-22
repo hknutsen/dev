@@ -144,6 +144,16 @@ echo "$greeting"
 wget <url>
 ```
 
+## Packages
+
+### Install Debian package
+
+```bash
+sudo dpkg -i <debian_package_path>
+```
+
+> **Note** Use `wget` to download a package from a web server, then use `dpkg` to install it.
+
 ## Inputs
 
 ### Yes/no prompt
