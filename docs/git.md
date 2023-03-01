@@ -66,3 +66,11 @@ git config --global fetch.prune true
 # Auto convert CRLF line endings to LF
 git config --global core.autocrlf input
 ```
+
+## Verify
+
+Run the following command in both PowerShell and Bash to verify your configuration:
+
+```bash
+git config --list --global
+```
