@@ -38,6 +38,20 @@ do
 done <<< "$my_string"
 ```
 
+### Trim trailing newline in multi-line string
+
+```bash
+$ my_string="First line
+Second line
+Third line
+
+"
+$ echo "$my_string" | sed -z 's/\n+$//'
+First line
+Second line
+Third line
+```
+
 ## JSON
 
 ### Create JSON object
