@@ -9,7 +9,7 @@ Useful resources:
 
 ## Multi-line strings
 
-### Squash newlines
+### Trim (squash) newlines
 
 ```bash
 $ my_string="
