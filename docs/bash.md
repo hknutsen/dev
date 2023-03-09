@@ -9,6 +9,28 @@ Useful resources:
 
 ## Multi-line strings
 
+### Squash newlines
+
+```bash
+$ my_string="
+
+
+First line
+
+
+Second line
+
+
+
+Third line
+
+"
+$ echo "$my_string" | tr -s "\n"
+First line
+Second line
+Third line
+```
+
 ### Convert multi-line string to array
 
 ```bash
