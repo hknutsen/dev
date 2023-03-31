@@ -65,6 +65,9 @@ git config --global fetch.prune true
 
 # Auto convert CRLF line endings to LF
 git config --global core.autocrlf input
+
+# Auto stash on rebase
+git config --global rebase.autoStash
 ```
 
 ## Verify
