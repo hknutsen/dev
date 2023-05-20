@@ -2,6 +2,10 @@
 
 This document contains instructions on how to install and configure GitHub CLI.
 
+## Prerequisites
+
+- [Install WSL](wsl.md)
+
 ## Install
 
 1. Open Bash.

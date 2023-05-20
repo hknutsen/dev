@@ -2,6 +2,10 @@
 
 This document contains instructions on how to work with Azure CLI.
 
+## Prerequisites
+
+- [Install WSL](wsl.md)
+
 ## Configure
 
 ### Set default output format

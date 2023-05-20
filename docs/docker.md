@@ -2,6 +2,10 @@
 
 This document contains instructions on how to install Docker.
 
+## Prerequisites
+
+- [Install WSL](wsl.md)
+
 ## Install
 
 1. Open PowerShell.
