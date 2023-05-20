@@ -5,6 +5,7 @@ This document contains instructions on how to install, configure and authenticat
 ## Prerequisites
 
 - [Install WSL](wsl.md)
+- [Install GitHub CLI](gh.md)
 
 ## Install
 
