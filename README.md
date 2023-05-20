@@ -1,2 +1,3 @@
 # dev
-Step-by-step guides on how I set up my development environment and tools.
+
+Step-by-step guides on how I set up my development environment using Windows, WSL, Docker and VS Code.
