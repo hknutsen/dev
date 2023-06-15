@@ -4,7 +4,7 @@ This document contains instructions on how to install Windows Subsystem for Linu
 
 ## Install
 
-1. Open PowerShell.
+1. Open PowerShell as **administrator**.
 
 1. Install WSL:
 
