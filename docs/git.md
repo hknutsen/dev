@@ -1,73 +1,79 @@
 # Git
 
-This document contains instructions on how to install, configure and authenticate Git.
+This document contains instructions on how to install and configure Git for Windows and on Windows Subsystem for Linux (WSL).
 
-## Prerequisites
+## Install Git for Windows
 
-- [Install WSL](wsl.md)
-- [Install GitHub CLI](gh.md)
+1. Open PowerShell.
 
-## Install
+1. Install Git for Windows:
 
-1. Open Bash.
-
-1. Install Git:
-
-   ```console
-   sudo apt-get install git
+   ```cmd
+   winget install -e --id Git.Git --source winget
    ```
 
-## Configure
+1. Restart your PC to finish the installation.
+
+## Configure Git for Windows
+
+1. Open PowerShell.
+
+1. Configure Git for Windows to use Git Credential Manager (GCM) as its credential helper:
+
+   ```cmd
+   git config --global credential.helper manager
+   ```
+
+   > **Note** GCM is included with Git for Windows.
+
+## Install and configure Git on WSL
 
 1. Open Bash.
 
-1. Set name and email address:
+1. Install Git on WSL:
 
-    ```console
-    git config --global user.name "Henrik Knutsen"
-    git config --global user.email 46495473+hknutsen@users.noreply.github.com
-    ```
+   ```bash
+   sudo apt install git
+   ```
 
-1. Set default branch name to main:
+1. Configure Git on WSL to use GCM as its credential helper:
 
-    ```console
-    git config --global init.defaultBranch main
-    ```
+   ```bash
+   git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"
+   ```
 
-1. Auto setup remote on push:
+## Set global options
 
-    ```console
-    git config --global push.autoSetupRemote true
-    ```
+Run the following commands in both PowerShell and Bash:
 
-1. Rebase on pull:
+```bash
+# Set name and email address
+git config --global user.name "Henrik Knutsen"
+git config --global user.email 46495473+hknutsen@users.noreply.github.com
 
-    ```console
-    git config --global pull.rebase true
-    ```
+# Set default branch name to main
+git config --global init.defaultBranch main
 
-1. Prune on fetch:
+# Auto setup remote on push
+git config --global push.autoSetupRemote true
 
-    ```console
-    git config --global fetch.prune true
-    ```
+# Rebase on pull
+git config --global pull.rebase true
 
-1. Auto stash on rebase:
+# Prune on fetch
+git config --global fetch.prune true
 
-    ```console
-    git config --global rebase.autoStash true
-    ```
+# Auto convert CRLF line endings to LF
+git config --global core.autocrlf input
 
-## Authenticate
+# Auto stash on rebase
+git config --global rebase.autoStash
+```
 
-1. Open Bash.
+## Verify
 
-1. Authenticate Git using GitHub CLI:
+Run the following command in both PowerShell and Bash to verify your configuration:
 
-    ```console
-    $ gh auth login
-    ? What account do you want to log into? GitHub.com
-    ? What is your preferred protocol for Git operations? HTTPS
-    ? Authenticate Git with your GitHub credentials? Yes
-    ? How would you like to authenticate GitHub CLI? Login with a web browser
-    ```
+```bash
+git config --list --global
+```
