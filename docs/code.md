@@ -2,6 +2,10 @@
 
 This document contains instructions on how to install and configure Visual Studio Code (VS Code).
 
+## Prerequisites
+
+- Configure Settings Sync using GitHub account `hknutsen`.
+
 ## Keyboard shortcuts
 
 ### Explorer
