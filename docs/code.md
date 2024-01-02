@@ -45,3 +45,7 @@ This document contains instructions on how to install and configure Visual Studi
 #### Open command palette
 
 `Ctrl` + `Shift` + `P`
+
+#### Toggle side bar
+
+`Ctrl` + `B`
