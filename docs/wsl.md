@@ -18,7 +18,7 @@ This document contains instructions on how to install Windows Subsystem for Linu
 
 ### Unable to open browser
 
-If you're unable to open a browser Window from WSL (e.g. using `az login` or `gh auth login`), install `wslu`:
+If you're unable to open a browser Window from WSL, install `wslu`:
 
 ```console
 sudo apt-get install wslu
