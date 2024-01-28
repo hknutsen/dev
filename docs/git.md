@@ -1,18 +1,6 @@
 # Git
 
-This document contains instructions on how to install and configure Git for Windows and on Windows Subsystem for Linux (WSL).
-
-## Install Git for Windows
-
-1. Open PowerShell.
-
-1. Install Git for Windows:
-
-   ```cmd
-   winget install -e --id Git.Git --source winget
-   ```
-
-1. Restart your PC to finish the installation.
+This document contains instructions on how to configure Git for Windows and on Windows Subsystem for Linux (WSL).
 
 ## Configure Git for Windows
 
@@ -26,7 +14,7 @@ This document contains instructions on how to install and configure Git for Wind
 
    > **Note** GCM is included with Git for Windows.
 
-## Install and configure Git on WSL
+## Configure Git on WSL
 
 1. Open Bash.
 
