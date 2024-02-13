@@ -56,6 +56,9 @@ git config --global core.autocrlf input
 
 # Auto stash on rebase
 git config --global rebase.autoStash
+
+# Set VS Code as editor
+git config --global core.editor "code --wait"
 ```
 
 ## Verify
