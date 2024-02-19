@@ -1,38 +1,14 @@
 # Git
 
-This document contains instructions on how to configure Git for Windows and on Windows Subsystem for Linux (WSL).
+This document contains instructions on how to install and configure Git.
 
-## Configure Git for Windows
+## Install
 
-1. Open PowerShell.
+```bash
+sudo dnf install git
+```
 
-1. Configure Git for Windows to use Git Credential Manager (GCM) as its credential helper:
-
-   ```cmd
-   git config --global credential.helper manager
-   ```
-
-   > **Note** GCM is included with Git for Windows.
-
-## Configure Git on WSL
-
-1. Open Bash.
-
-1. Install Git on WSL:
-
-   ```bash
-   sudo apt install git
-   ```
-
-1. Configure Git on WSL to use GCM as its credential helper:
-
-   ```bash
-   git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"
-   ```
-
-## Set global options
-
-Run the following commands in both PowerShell and Bash:
+## Configure
 
 ```bash
 # Set name and email address
@@ -62,8 +38,6 @@ git config --global core.editor "code --wait"
 ```
 
 ## Verify
-
-Run the following command in both PowerShell and Bash to verify your configuration:
 
 ```bash
 git config --list --global
