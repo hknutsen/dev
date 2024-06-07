@@ -4,50 +4,40 @@ This document contains instructions on how to set up my dev environment on a new
 
 ## Setup tools
 
+1. Open Windows PowerShell or Command Prompt.
+
+1. Install development tools:
+
+    ```console
+    winget install Microsoft.WindowsTerminal Microsoft.PowerShell Git.Git Microsoft.VisualStudioCode Docker.DockerDesktop
+    ```
+
 1. Install WSL:
 
     ```console
     wsl --install
     ```
 
-1. Install Windows Terminal:
-
-    ```console
-    winget install -e --id Microsoft.WindowsTerminal -s winget
-    ```
-
-1. Install Git:
-
-    ```console
-    winget install -e --id Git.Git -s winget
-    ```
-
-1. Install VS Code:
-
-    ```console
-    winget install -e --id Microsoft.VisualStudioCode -s winget
-    ```
-
-1. Install Docker Desktop:
-
-   ```console
-   winget install -e --id Docker.DockerDesktop -s winget
-   ```
-
 1. Restart your machine.
 
-1. Install Git on WSL:
+1. Open Ubuntu.
 
-    ```console
-    sudo apt update && sudo apt install git
+1. Create directory for Git repositories:
+
+    ```bash
+    mkdir gitrepos && cd gitrepos
     ```
-
-1. [Configure Git](git.md).
 
 1. Clone this repository:
 
     ```console
-    git clone https://github.com/hknutsen/dev.git
+    git clone https://github.com/hknutsen/dev.git && cd dev
+    ```
+
+1. Configure WSL:
+
+    ```bash
+    ./scripts/configure_wsl.sh
     ```
 
 1. Open this repository in VS Code:
