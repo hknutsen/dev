@@ -85,3 +85,9 @@ This document contains instructions on how to set up my dev environment on a new
     ```console
     winget install -e --id Discord.Discord -s winget
     ```
+
+1. Install Quod Libet and MusicBrainz Picard:
+
+    ```console
+    winget install QuodLibet.QuodLibet MusicBrainz.Picard
+    ```
