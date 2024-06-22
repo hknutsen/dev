@@ -43,7 +43,7 @@ This document contains instructions on how to set up my dev environment on a new
 1. Open this repository in VS Code:
 
     ```console
-    code dev
+    code .
     ```
 
 1. Login to VS Code Settings Sync with your GitHub account.
