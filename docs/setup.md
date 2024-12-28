@@ -12,13 +12,13 @@ This document contains instructions on how to set up my dev environment on a new
     winget install Microsoft.WindowsTerminal Microsoft.PowerShell Git.Git Microsoft.VisualStudioCode Docker.DockerDesktop
     ```
 
+1. Restart your machine.
+
 1. Install WSL:
 
     ```console
     wsl --install
     ```
-
-1. Restart your machine.
 
 1. Open Ubuntu.
 
