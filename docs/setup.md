@@ -9,7 +9,7 @@ This document contains instructions on how to set up my dev environment on a new
 1. Install development tools:
 
     ```console
-    winget install Microsoft.WindowsTerminal Microsoft.PowerShell Git.Git Microsoft.VisualStudioCode Docker.DockerDesktop
+    winget install Microsoft.WindowsTerminal Microsoft.PowerShell Git.Git Microsoft.VisualStudioCode Docker.DockerDesktop GitHub.cli
     ```
 
 1. Restart your machine.
